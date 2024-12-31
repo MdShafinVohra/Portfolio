@@ -4,10 +4,10 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar navArray={navArray} />
       <Hero />
-    </>
+    </div>
   );
 }
 

@@ -4,9 +4,21 @@
 
 @font-face {
   font-family: MyFont;
-  src: url("./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 * {
   font-family: MyFont;
+}
+
+.typeWriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typeWriter p {
+  overflow: hidden;
+  margin-inline: auto;
+  white-space: nowrap;
+  border-right: 1px solid;
 }
