@@ -191,7 +191,7 @@ export default function Services() {
           <div className="relative z-10">
             <div className="text-6xl text-indigo-300 absolute top-0 left-6">&quot;</div>
             <p className="text-xl italic mb-6 px-10 pt-8">
-              Working with Alex transformed my career. His mentorship helped me land my first developer job in just 3 months. The
+              Working with Shafin transformed my career. His mentorship helped me land my first developer job in just 3 months. The
               personalized guidance and real-world project experience were invaluable.
             </p>
             <div className="flex items-center justify-center">
