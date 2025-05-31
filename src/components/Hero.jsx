@@ -17,7 +17,7 @@ export default function Hero() {
           specialArray={["Software Engineer", "Software Developer", "Front-End Developer", "Web Developer", "React Developer"]}
         />
         <Text
-          text="Software Developer with 2 years of relevant experience in development. Seeking a position at your reputed company, where I bring my development skills to support your mission."
+          text="I am passionate about teaching and empowering students to become skilled web developers. With years of experience in HTML, CSS, JavaScript, React, and modern web technologies, I am dedicated to helping you build a strong foundation and launch your career in tech. My classes are hands-on, project-based, and live."
           className="pb-2"
         />
         <Social />
