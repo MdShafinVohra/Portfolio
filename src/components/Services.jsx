@@ -166,7 +166,7 @@ export default function Services() {
                 </li>
               </ul>
               <button className="mt-auto px-6 py-2 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-full font-medium hover:scale-105 transition-transform duration-300">
-                Learn More
+                Learn More !
               </button>
             </div>
           </motion.div>
