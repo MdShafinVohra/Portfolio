@@ -4,8 +4,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="min-h-screen bg-gradient-to-br from-indigo-50 to-sky-100 flex flex-col items-center justify-center py-16 px-4 relative overflow-hidden"
-    >
+      className="min-h-screen bg-gradient-to-br from-indigo-50 to-sky-100 flex flex-col items-center justify-center py-16 px-4 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-indigo-200 opacity-20 blur-3xl z-0"></div>
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent z-0"></div>
@@ -21,8 +20,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
           <h2 className="text-4xl md:text-5xl font-bold text-indigo-900 mb-4">
             What I <span className="text-cyan-500">Offer</span>
           </h2>
@@ -39,8 +37,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+            transition={{ duration: 0.6, delay: 0.2 }}>
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-indigo-500 rounded-2xl transform rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
             <div className="relative bg-white rounded-2xl shadow-xl p-8 h-full flex flex-col items-center text-center group-hover:shadow-2xl transition-all duration-300">
               <div className="mb-6 w-20 h-20 rounded-full bg-gradient-to-br from-cyan-100 to-indigo-100 flex items-center justify-center">
@@ -84,8 +81,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
+            transition={{ duration: 0.6, delay: 0.4 }}>
             <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl transform -rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
             <div className="relative bg-white rounded-2xl shadow-xl p-8 h-full flex flex-col items-center text-center group-hover:shadow-2xl transition-all duration-300">
               <div className="mb-6 w-20 h-20 rounded-full bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
@@ -132,8 +128,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
+            transition={{ duration: 0.6, delay: 0.6 }}>
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl transform rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
             <div className="relative bg-white rounded-2xl shadow-xl p-8 h-full flex flex-col items-center text-center group-hover:shadow-2xl transition-all duration-300">
               <div className="mb-6 w-20 h-20 rounded-full bg-gradient-to-br from-emerald-100 to-green-100 flex items-center justify-center">
@@ -171,7 +166,7 @@ export default function Services() {
                 </li>
               </ul>
               <button className="mt-auto px-6 py-2 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-full font-medium hover:scale-105 transition-transform duration-300">
-                Learn More
+                Learn More !
               </button>
             </div>
           </motion.div>
@@ -183,8 +178,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
+          transition={{ duration: 0.8, delay: 0.8 }}>
           <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-white/10"></div>
           <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-white/10"></div>
 
