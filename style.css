@@ -81,7 +81,10 @@ ul {
 .hero::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: radial-gradient(circle at 80% 15%, rgba(125, 211, 252, 0.15), transparent 55%);
   pointer-events: none;
 }
@@ -137,37 +140,6 @@ ul {
   flex-direction: column;
   gap: 0.35rem;
 }
-.hero__contact a {
-  color: #7dd3fc;
-  text-decoration: none;
-}
-
-.hero h1 {
-  font-size: clamp(2.2rem, 6vw, 4rem);
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-}
-
-.hero h1 span {
-  color: #7dd3fc;
-}
-
-.hero p {
-  margin-bottom: 0.75rem;
-  color: #cbd5e1;
-}
-
-.hero p span.highlight {
-  color: #7dd3fc;
-}
-
-.hero__contact {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  color: #cbd5e1;
-  line-height: 1.6;
-}
-
 .hero__contact a {
   color: #7dd3fc;
   text-decoration: none;
