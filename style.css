@@ -67,18 +67,79 @@ ul {
 
 /* Hero */
 .hero {
-  min-height: 88vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1d4ed8 100%);
+  background: radial-gradient(135deg, #1d4ed8 0%, #0f172a 55%);
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
-
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 15%, rgba(125, 211, 252, 0.15), transparent 55%);
+  pointer-events: none;
+}
 .hero__inner {
-  max-width: 760px;
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+.hero__avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #7dd3fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  box-shadow: 0 8px 24px rgba(125, 211, 252, 0.3), 0 0 0 5px rgba(125, 211, 252, 0.25);
+  flex-shrink: 0;
+}
+.hero__content {
+  flex: 1;
+  min-width: 0;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+.hero h1 span {
+  color: #7dd3fc;
+}
+.hero p {
+  margin-bottom: 1.25rem;
+  color: #cbd5e1;
+  font-size: 1.1rem;
+}
+.hero p span.highlight {
+  color: #7dd3fc;
+}
+.hero__contact {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.hero__contact a {
+  color: #7dd3fc;
+  text-decoration: none;
 }
 
 .hero h1 {
@@ -150,10 +211,27 @@ ul {
 /* Skills */
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.skills__group {
+  display: flex;
+  flex-direction: column;
   gap: 0.75rem;
 }
-
+.skills__group-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .skill {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -164,15 +242,12 @@ ul {
   gap: 0.6rem;
   text-align: center;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--text);
+  transition: border-color 0.2s, transform 0.15s;
 }
-
-.skill .cat {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--primary);
-  font-weight: 800;
+.skill:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
 }
 
 /* Experience */
